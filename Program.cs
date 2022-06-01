@@ -7,23 +7,26 @@ namespace BinarySearchTree
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Binary Search Tree");
-            BinarySearch<int> binarySearchTree = new BinarySearch<int>(56);
-            binarySearchTree.AddNode(30);
-            binarySearchTree.AddNode(70);
-            binarySearchTree.AddNode(22);
-            binarySearchTree.AddNode(40);
-            binarySearchTree.AddNode(60);
-            binarySearchTree.AddNode(95);
-            binarySearchTree.AddNode(11);
-            binarySearchTree.AddNode(65);
-            binarySearchTree.AddNode(3);
-            binarySearchTree.AddNode(16);
-            binarySearchTree.AddNode(67);
-            binarySearchTree.AddNode(63);
-            binarySearchTree.Display();
+            BinarySearch<int> binarySearch = new BinarySearch<int>(56);
+            binarySearch.AddNode(30);
+            binarySearch.AddNode(70);
+            binarySearch.AddNode(22);
+            binarySearch.AddNode(40);
+            binarySearch.AddNode(60);
+            binarySearch.AddNode(95);
+            binarySearch.AddNode(11);
+            binarySearch.AddNode(65);
+            binarySearch.AddNode(3);
+            binarySearch.AddNode(16);
+            binarySearch.AddNode(67);
+            binarySearch.AddNode(63);
+            binarySearch.Display();
             Console.WriteLine("\n");
-            binarySearchTree.Getsize();
+            binarySearch.Getsize();
+            binarySearch.Search(63, binarySearch);
+            //binarySearch.Search(62, binarySearch);
+
         }
     }
-    
+
 }
